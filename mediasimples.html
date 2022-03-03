@@ -1,0 +1,44 @@
+﻿<script>
+let nota1= ' ';
+let nota2 = ' ';
+let contador = 0;
+let resultado;
+let novo=' ';
+
+
+while(true){ 
+
+nota1 = parseInt(prompt("entre com o primeira nota entre 0 e 10"));
+nota2 = parseInt(prompt("entre com o segunda nota entre 0 e 10"));
+
+if((nota1<0)||(nota1>10)){
+    resultado= " ";
+    alert("Entre com uma nota de 0 a 10 para a primeira");
+
+}
+ if((nota2<0)||(nota2>10)){
+ resultado= " ";
+ alert("Entre com uma nota de 0 a 10 para a segunda");
+
+ }
+
+else if ((nota1>=0)&&(nota1<=10)&&(nota2>=0)&&(nota2<=10)){
+ resultado = (nota1 + nota2)/2;
+ alert("O resultado da média simples é: " + resultado);
+ contador++;
+}
+
+
+ novo = prompt("NOVO CÁLCULO (S/N)?");
+if(novo =="S"){
+    continue;
+  }
+else if(novo=="N"){
+
+break;
+
+ }
+
+}
+
+</script>
